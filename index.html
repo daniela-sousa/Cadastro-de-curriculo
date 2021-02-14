@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Docket</title>
+</head>
+<body >
+  
+  <nav>
+    <a href="#" class="container ml-5 mt-5" id="a-logo">
+      <img src="/img/Logo-Docket.png" class="mt-3 ml-5" id="logo" alt="Logo da Docket" height="50px" width="80px">
+    </a>
+  </nav>
+
+  <div class="alert alert-success text-align-center container" id="aviso" role="alert">
+    <span id="aviso1"></span>
+  </div>
+
+  <section class="d-flex aling-items-center justify-content-center mb-4" id="sec-forms">
+    <div class="container rounded " id="div-forms"> 
+      <form class="container pt-4 p-3">
+        <div class="form-group">
+          <h1 id="venha-h1" ><strong>Venha Trabalhar na Docket</strong></h1>
+        </div>
+          <p class="mt-2" id="p-preencha">Preencha o formulário abaixo e venha trabalhar em uma das startups mais desejadas do Brasil</p>
+        
+        <div class="form-group">
+          <p class="mb-2 mt-2" id="dados" ><strong>Dados pessoais</strong></p>
+          <label for="nome"><span class="span-red">*</span> Nome completo:</label>
+          <input required type="text" class="form-control" id="nome" >
+          <span id="span-nome" class="span-feedback">
+            
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="email"><span class="span-red">*</span> E-mail:</label>
+          <input required type="email" class="form-control" id="email" >
+          <span id="span-email" class="span-feedback">
+            
+          </span>
+        </div>
+        <div class="d-flex" id="div-telefones">
+          <div class="form-group">
+            <label for="telefone1"><span class="span-red">*</span> Telefone 1:</label>
+            <input  required type="text" class="form-control" id="telefone1">
+            <span id="span-telefone1" class="span-feedback">
+              
+            </span>
+          </div>
+          <div class="form-group ml-5" id="div-tel2">
+            <label for="telefone2">Telefone 2:</label>
+            <input type="text" class="form-control" id="telefone2">
+            <span id="span-telefone2" class="span-feedback">
+              
+            </span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2" onclick="enviar()">Enviar</button>
+      </form>
+    </div>
+
+
+    <div class="container rounded" id="div-forms2"> 
+      <form class="container pt-2 p-3">
+        <div class="form-group">
+          <h2 id="ficha-h2"><strong class="text-uppercase" id="ficha-strong" >Ficha do candidato</strong></h2>
+          <p class="mt-2" id="preencha">Preencha o formulário e clique em "Enviar" após conferir atentamente</p>
+        </div>
+        <div class="form-group mt-3" id="minhaDiv" style="display: none;">
+          <span class="span-dados">Nome Completo:</span>
+          <p><strong id="nomeCompleto"></strong></p>
+
+          <span class="span-dados">E-mail:</span>
+          <p ><strong id="addEmail"></strong></p>
+
+          <span class="span-dados">Telefone 1:</span>
+          <p ><strong id="tel1"></strong></p>
+
+          <span class="span-dados">Telefone 2:</span>
+          <p ><strong id="tel2"></strong></p>
+        </div>
+        <div class="form-group " id="form-sel">
+          <div id="carouselExampleControls" class="carousel slide mt-5 container" data-ride="carousel">
+            <p class="mt-5"><strong>Seus projetos:</strong></p>
+            <div id="teste2" class="carousel-inner container d-flex" ></div>
+        
+            <a class="carousel-control-prev mt-5 mr-5" href="#carouselExampleControls" role="button" data-slide="prev">
+             <i class="fa fa-caret-left" style="font-size:46px; color:black" aria-hidden="true"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next mt-5 ml-5" href="#carouselExampleControls" role="button" data-slide="next">
+              <i class="fa fa-caret-right" style="font-size:46px; color:black" aria-hidden="true"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p class="p-3">DOCKET &copy; 2019</p>
+  </footer>
+</body>
+
+<script src="/functions.js"></script>
+
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

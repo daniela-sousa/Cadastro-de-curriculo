@@ -1,0 +1,155 @@
+body{
+    background-color: #F3F3F3 !important;
+  }
+  nav{
+    background-image: linear-gradient(to right, #5A5789, #2D2C45); 
+    min-height: 230px;
+  }
+  #aviso{
+    width: auto; 
+    max-width: 40%; 
+    position: absolute; 
+    top: 3%; 
+    left: 40%; 
+    display: none;
+  }
+
+  #sec-forms{
+    margin-top: -11%;
+  }
+
+  #div-forms{
+    background-color: #fff; 
+    width: 40%;
+  }
+
+  #venha-h1{
+    font-size: 25px;
+  }
+
+  #p-preencha{
+    font-size: 16px;
+  }
+
+  #dados{
+    font-size: 15px;
+  }
+
+  .span-red{
+    color: red;
+  }
+
+  .span-feedback{
+    font-size: 13px; 
+    color: #c1c1c1;
+  }
+
+  label{
+    font-size: 13px;
+  }
+
+  #div-forms2{
+    background-color: #EBF0F5; 
+    width: 40%; 
+    margin-left: -5%;
+    border-top: solid 10px #C4C8CC;
+  }
+
+  #ficha-h2{
+    font-size: 20px;
+  }
+
+  #ficha-strong{
+    color: #403D70;
+  }
+
+  #preencha{
+    font-size: 15px; 
+    display: block; 
+    width: 80%; 
+    color: #C4C8CC;
+  }
+
+  .span-dados{
+    font-size: 13px;
+  }
+
+  #form-sel{
+    margin-top: 50%; 
+    max-height: 150px;
+  }
+
+  footer{
+    background-image: linear-gradient(to right, #5A5789, #2D2C45); 
+    text-align: center; 
+    color: #fff;
+  }
+
+@media (max-width: 983px){
+
+  #a-logo{
+    margin-left: 10% !important;
+  }
+  #logo{
+    margin-top: 5% !important;
+  }
+
+  #aviso{
+    top: 20%; 
+    left: 35%;
+  }
+  
+  #sec-forms{
+    display: block !important;
+  }
+
+  #div-forms, #div-forms2{ 
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+}
+@media (max-width: 436px){
+  #a-logo{
+    margin-left: 0% !important;
+  }
+  #logo{
+    margin-top: 10% !important;
+  }
+
+  #p-preencha{
+    font-size: 13px;
+  }
+
+  #preencha{
+    font-size: 13px;
+    width: 100%;
+  }
+
+  #sec-forms{
+    margin-top: -20%;
+  }
+
+  #aviso{
+    top: 20%; 
+    left: 13%;
+    max-width: 100%;
+  }
+
+  #div-telefones{
+    display: block !important;
+  }
+  #div-tel2{
+    margin-left: 0% !important;
+  }
+  
+}
+
+@media (max-width: 436px){
+  #aviso{
+    top: 17%; 
+    left: 5%;
+    max-width: 100%;
+  }
+}
